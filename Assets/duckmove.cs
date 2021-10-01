@@ -48,11 +48,11 @@ public class duckmove : MonoBehaviour
 
         if (velocity.y != 0)
         {
-            anim.SetBool("jump", true);
+            anim.SetBool("duckjump", true);
         }
         else
         {
-            anim.SetBool("jump", false);
+            anim.SetBool("duckjump", false);
         }
 
         rb.velocity = velocity;
@@ -80,11 +80,11 @@ public class duckmove : MonoBehaviour
 
         if (velocity.x != 0)
         {
-            anim.SetBool("walking", true);
+            anim.SetBool("duckwalk", true);
         }
         else
         {
-            anim.SetBool("walking", false);
+            anim.SetBool("duckwalk", false);
         }
 
         rb.velocity = velocity;
@@ -127,7 +127,8 @@ public class duckmove : MonoBehaviour
     }
 
 
-
+    
+    
 
 
 }

@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 81104eed0351dec44bc29238dd644780
+guid: 90c55ab73ce0f9f4b955e8156e9eeddf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5845641801103379456
-    second: Pixilart Sprite Sheet 1_0
+      213: 5459021272372997977
+    second: duck-walk-1_0
   - first:
-      213: -7122442148565066740
-    second: Pixilart Sprite Sheet 1_1
+      213: 3318399090100214625
+    second: duck-walk-1_1
   - first:
-      213: -570833494327803009
-    second: Pixilart Sprite Sheet 1_2
-  - first:
-      213: 5662501404991305866
-    second: Pixilart Sprite Sheet 1_3
-  - first:
-      213: -8921059234540517655
-    second: Pixilart Sprite Sheet 1_4
-  - first:
-      213: 158303612620373145
-    second: Pixilart Sprite Sheet 1_5
+      213: -760160117314697288
+    second: duck-walk-1_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -157,33 +148,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_0
+      name: duck-walk-1_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 60
         y: 10
-        width: 260
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 004fe01e0cb10eea0800000000000000
-      internalID: -5845641801103379456
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_1
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 10
-        width: 260
+        width: 250
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -192,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0c52892a90082d90800000000000000
-      internalID: -7122442148565066740
+      spriteID: 95fe7119ce652cb40800000000000000
+      internalID: 5459021272372997977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_2
+      name: duck-walk-1_1
       rect:
         serializedVersion: 2
-        x: 670
+        x: 380
         y: 10
-        width: 260
-        height: 230
+        width: 250
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7342b816fdf318f0800000000000000
-      internalID: -570833494327803009
+      spriteID: 16b176c04625d0e20800000000000000
+      internalID: 3318399090100214625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_3
+      name: duck-walk-1_2
       rect:
         serializedVersion: 2
-        x: 990
-        y: 10
-        width: 260
-        height: 210
+        x: 700
+        y: 30
+        width: 250
+        height: 220
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,50 +204,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8838a0d60f359e40800000000000000
-      internalID: 5662501404991305866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_4
-      rect:
-        serializedVersion: 2
-        x: 1310
-        y: 10
-        width: 260
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e68ef854e7023480800000000000000
-      internalID: -8921059234540517655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixilart Sprite Sheet 1_5
-      rect:
-        serializedVersion: 2
-        x: 1630
-        y: 10
-        width: 260
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99cf5e40c48623200800000000000000
-      internalID: 158303612620373145
+      spriteID: 8b7c90b966e5375f0800000000000000
+      internalID: -760160117314697288
       vertices: []
       indices: 
       edges: []

@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 7cf6a3eef7b430642ab8018a541059c5
+guid: 4c76f94a2311763459bc2373a95821b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 463167036469006645
-    second: Pixilart Sprite Sheet_0
+      213: -3856713332601995765
+    second: duck-idle_0
   - first:
-      213: -3901825175021881390
-    second: Pixilart Sprite Sheet_1
+      213: -1237109898169176276
+    second: duck-idle_1
   - first:
-      213: -5664650594666802891
-    second: Pixilart Sprite Sheet_2
+      213: -7372367525279473375
+    second: duck-idle_2
+  - first:
+      213: -4547808271143863218
+    second: duck-idle_3
+  - first:
+      213: -1219461162701069972
+    second: duck-idle_4
+  - first:
+      213: -3559744847037512559
+    second: duck-idle_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,13 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pixilart Sprite Sheet_0
+      name: duck-idle_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 20
-        width: 240
-        height: 250
+        x: 60
+        y: 10
+        width: 250
+        height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,40 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 531d76837ff7d6600800000000000000
-      internalID: 463167036469006645
+      spriteID: b0ebeb168a33a7ac0800000000000000
+      internalID: -3856713332601995765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pixilart Sprite Sheet_1
+      name: duck-idle_1
       rect:
         serializedVersion: 2
-        x: 370
-        y: 20
-        width: 240
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d7f4231daee9d9c0800000000000000
-      internalID: -3901825175021881390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pixilart Sprite Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 690
-        y: 40
-        width: 240
+        x: 380
+        y: 10
+        width: 250
         height: 230
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,8 +192,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5311e28fb4e1361b0800000000000000
-      internalID: -5664650594666802891
+      spriteID: c2fa1832a17e4dee0800000000000000
+      internalID: -1237109898169176276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck-idle_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 10
+        width: 250
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1216716dbc610b990800000000000000
+      internalID: -7372367525279473375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck-idle_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 10
+        width: 250
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4cf2e30970f2e0c0800000000000000
+      internalID: -4547808271143863218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck-idle_4
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 10
+        width: 250
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6161d3988a931fe0800000000000000
+      internalID: -1219461162701069972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck-idle_5
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 10
+        width: 250
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1944d450cee399ec0800000000000000
+      internalID: -3559744847037512559
       vertices: []
       indices: 
       edges: []
