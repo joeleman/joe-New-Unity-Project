@@ -7,7 +7,7 @@ public class enemymove : MonoBehaviour
 
     private Rigidbody2D rb;
     public GameObject player;
-    bool isGrounded;
+    /*bool isGrounded;*/
     // Start is called before the first frame update
     void Start()
     {
@@ -77,7 +77,7 @@ public class enemymove : MonoBehaviour
         
     }
     
-
+  
     void DoFaceLeft(bool faceleft)
     {
         if (faceleft == false)
@@ -89,7 +89,7 @@ public class enemymove : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
-
+    /*
     private void OnCollisionStay2D(Collision2D collosion)
     {
         isGrounded = true;
@@ -99,4 +99,4 @@ public class enemymove : MonoBehaviour
     {
         isGrounded = false;
     }
-}
+*/}

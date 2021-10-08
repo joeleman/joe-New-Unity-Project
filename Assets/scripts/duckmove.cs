@@ -4,12 +4,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public Transform firePoint;
 public class duckmove : MonoBehaviour
 {
     private Rigidbody2D rb;
     bool isGrounded;
     private Animator anim;
+    public GameObject knife;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class duckmove : MonoBehaviour
     {
         DoJump();
         DoMove();
+        DoShoot();
 
     }
 
@@ -126,9 +128,30 @@ public class duckmove : MonoBehaviour
         }
     }
 
+    void DoShoot()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
+    void Shoot()
+    {
+        Instantiate(knife, firePoint.position, firePoint.rotation);
+    }
+    
 
-    
-    
+    public static void Shoot(GameObject prefab, float xpos, float ypos, float xvel, float yvel)
+    {
+        GameObject instance = Instantiate(prefab, new Vector3(xpos, ypos, 0), Quaternion.identity);
+        Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector3(6, 0, 0);
+        //FlipObject(instance, xvel <0?Left:Right);
+
+    }
+
+
+
 
 
 }
