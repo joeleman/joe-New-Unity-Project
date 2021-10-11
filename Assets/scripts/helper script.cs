@@ -69,5 +69,46 @@ public class Helper : MonoBehaviour
 
         }
     }
+    public static void SetVelocity(GameObject obj, float xv, float yv)
+    {
+        Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector3(xv, yv, 0);
+     
+    }
+
+    /*
+    void DoRayCollisionCheck()
+{
+        float rayLength = 1.0f;
+ 
+	//cast a ray downward of length 1
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, rayLength);
+       
+        Color hitColor = Color.white;
+       
+       
+        if (hit.collider != null)
+        {
+ 
+            if( hit.collider.tag == "Player")
+            {
+                print("Player has collided with Enemy" );
+                hitColor = Color.red;
+            }
+ 
+            if( hit.collider.tag == "Ground")
+            {
+                print("Player has collided with Ground" );
+                hitColor = Color.green;
+            }
+        }
+	// draw a debug ray to show ray position
+	// You need to enable gizmos in the editor to see these
+        Debug.DrawRay(transform.position, -Vector2.up * rayLength, hitColor);
+ 
+}
+ 
+    */
+
 
 }

@@ -61,35 +61,32 @@ public class duckmove : MonoBehaviour
 
     }
 
+
+
+
+
     void DoMove()
     {
-        Vector2 velocity = rb.velocity;
 
-        // stop player sliding when not pressing left or right
-        velocity.x = 0;
+        anim.SetBool("duckwalk", false);
+
 
         // check for moving left
         if (Input.GetKey("a"))
         {
-            velocity.x = -5;
+            Helper.SetVelocity(gameObject, -5,0 );
+            anim.SetBool("duckwalk", true);
         }
 
         // check for moving right
         if (Input.GetKey("d"))
         {
-            velocity.x = 5;
-        }
-
-        if (velocity.x != 0)
-        {
+            Helper.SetVelocity(gameObject, 5, 0);
             anim.SetBool("duckwalk", true);
         }
-        else
-        {
-            anim.SetBool("duckwalk", false);
-        }
 
-        rb.velocity = velocity;
+      
+       
 
     }
     void DoFaceLeft(bool faceleft)
@@ -105,14 +102,20 @@ public class duckmove : MonoBehaviour
     }
 
 
+
+
+
+    
     private void OnCollisionStay2D(Collision2D collosion)
     {
         isGrounded = true;
+       // Helper.DoRayCollisionCheck();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
+        //Helper.DoRayCollisionCheck();
     }
 
     private void FixedUpdate()
@@ -128,11 +131,33 @@ public class duckmove : MonoBehaviour
         }
     }
 
+
+
+
+
     void DoShoot()
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Instantiate(knife, transform.position + new Vector3(0, 0 + 2, 0), Quaternion.identity);
+            GameObject obj=Instantiate(knife, transform.position + new Vector3(0, 0 + 0, 0), Quaternion.identity);
+            
+
+            Helper.SetVelocity(obj, 3, 0);
+
+           /* void KnifeFaceLeft(bool knifeleft)
+            {
+                while (Input.getkey == a) 
+                    (knifeleft == true);
+                {
+                    transform.localRotation = Quaternion.Euler(0, 180, 0);
+                }
+                else
+                {
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                }
+            }*/
+
         }
     }
+       
 }

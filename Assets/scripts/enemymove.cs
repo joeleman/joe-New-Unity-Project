@@ -18,7 +18,7 @@ public class enemymove : MonoBehaviour
     void Update()
     {
         DoMove();
-        DoJump();
+       // DoJump();
         
     }
 
@@ -35,14 +35,14 @@ public class enemymove : MonoBehaviour
         if (ex > px)
         {
             DoFaceLeft(true);
-            velocity.x = -1;
+            velocity.x = -4;
         }
        
 
         else
         {
             DoFaceLeft(false);
-            velocity.x = 1;
+            velocity.x = 4;
         }
 
 
@@ -51,7 +51,7 @@ public class enemymove : MonoBehaviour
 
 
     
-    void DoJump()
+    /*void DoJump()
     {
         Vector2 velocity = rb.velocity;
 
@@ -76,7 +76,7 @@ public class enemymove : MonoBehaviour
          
         
     }
-    
+    */
   
     void DoFaceLeft(bool faceleft)
     {
