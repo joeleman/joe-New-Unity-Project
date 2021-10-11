@@ -4,11 +4,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public Transform firePoint;
 public class duckmove : MonoBehaviour
 {
     private Rigidbody2D rb;
     bool isGrounded;
+    public Transform firePoint;
     private Animator anim;
     public GameObject knife;
 
@@ -130,28 +130,9 @@ public class duckmove : MonoBehaviour
 
     void DoShoot()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            Shoot();
+            Instantiate(knife, transform.position + new Vector3(0, 0 + 2, 0), Quaternion.identity);
         }
     }
-    void Shoot()
-    {
-        Instantiate(knife, firePoint.position, firePoint.rotation);
-    }
-    
-
-    public static void Shoot(GameObject prefab, float xpos, float ypos, float xvel, float yvel)
-    {
-        GameObject instance = Instantiate(prefab, new Vector3(xpos, ypos, 0), Quaternion.identity);
-        Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector3(6, 0, 0);
-        //FlipObject(instance, xvel <0?Left:Right);
-
-    }
-
-
-
-
-
 }
